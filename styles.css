@@ -1,0 +1,21 @@
+:root {
+    --grid-cols: 16;
+    --grid-rows: 16;
+}
+
+#container {
+    display: grid;
+    grid-gap: 2em;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+#container > div {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    outline-color: black;
+    outline-style: inset;
+}
