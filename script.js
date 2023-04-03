@@ -10,8 +10,7 @@ window.onload = () => {
             container.appendChild(grid[i][j]);
         }
     }
-    const divs = document.getElementsByClassName("grid-item");
+    const divs = document.querySelectorAll(".grid-item");
 
-    divs.addEventListener("mouseover", () => divs.style.backgroundColor = "white");
-    divs.addEventListener("mouseout", () => divs.style.backgroundColor = "gray");
+    divs.forEach(cell => cell.addEventListener("mouseover", () => cell.style.backgroundColor = "white"));
 };
