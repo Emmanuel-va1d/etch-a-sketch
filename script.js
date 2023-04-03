@@ -5,8 +5,9 @@ let size = 16;
 let grid = [];
 
 let createGrid = size => {
+    
     for (let i = 0; i < size ** 2; i++) {
-        const side = 500 / size;
+        const side = 600 / size;
         grid[i] = document.createElement("div");
         grid[i].classList.add("grid-item");
         grid[i].style.width = `${side}px`;
